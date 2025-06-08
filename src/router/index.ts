@@ -5,15 +5,15 @@ export const routers: RouteRecordRaw[] = [
   {
     path: '/',
     component: MainLayout,
-    meta: {
-      icon: '',
-      name: 'Home',
-    },
     children: [
       {
         path: '',
         name: 'Home',
         component: MainLayout,
+        meta: {
+          title: 'META.HOME.TITLE',
+          description: 'META.HOME.DESCRIPTION',
+        },
       },
     ],
   },
